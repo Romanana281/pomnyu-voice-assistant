@@ -1,0 +1,15 @@
+services:
+  assistant:
+    build: .
+    image: pomnyu
+    container_name: pomnyu
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env.local
+    volumes:
+      - pomnyu-data:/data
+
+volumes:
+  pomnyu-data:

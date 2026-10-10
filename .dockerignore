@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+**/data/
+**/*.db
+**/.DS_Store
+.git/
+.config/
+.env
+.env.*
+*.md
+*.pdf
+docker-compose.yml
